@@ -12,9 +12,9 @@ def ocr_core(img):
     text = pytesseract.image_to_string(img)
     return text
 
-img = cv2.imread('ReceiptScanner/img.png')
+img = cv2.imread('img.png')
 img = preprocess_image(img)
 
 #img = cv2.imread('/Users/karthi/Documents/584/Git/ReceiptStash_HCI584/ReceiptScanner/img.jpeg')
-img = cv2.imread('ReceiptScanner/img.jpeg') # always use relative paths!
+#img = cv2.imread('img.jpeg') # always use relative paths!
 print(ocr_core(img))
