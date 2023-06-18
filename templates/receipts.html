@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Receipts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS styles for table cells */
+        td {
+            font-family: Arial, sans-serif; /* Change the font family */
+            color: #333; /* Change the font color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Receipt Organizer</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Uploaded Receipts</h5>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Receipt ID</th>
+                            <th>Image Path</th>
+                            <th>Vendor Name</th>
+                            <th>Date</th>
+                            <th>Total Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for receipt in receipts %}
+                        <tr>
+                            <td>{{ receipt[0] }}</td>
+                            <td>{{ receipt[1] }}</td>
+                            <td>{{ receipt[2] }}</td>
+                            <td>{{ receipt[3] }}</td>
+                            <td>{{ receipt[4] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
