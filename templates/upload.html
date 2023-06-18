@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="text-center mb-4">Receipt Organizer</h1>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Upload Receipt</h5>
+        <form method="POST" enctype="multipart/form-data" action="/upload">
+            <div class="mb-3">
+                <label for="file" class="form-label">Select Receipt Image:</label>
+                <input type="file" class="form-control" id="file" name="file" accept="*" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
