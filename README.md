@@ -1,5 +1,5 @@
 # ReceiptStash
-Organize Your Receipts. The project aims to provide a centralized platform for storing and managing receipts and helps the user keep their financial records organized and easily accessible.
+ReceiptStash is a web application that allows you to upload and organize your receipts. It uses Flask as the backend framework and integrates Tesseract OCR for extracting text from uploaded receipt images.
 
 # Prerequisites
 Make sure you have the following prerequisites installed on your system:
