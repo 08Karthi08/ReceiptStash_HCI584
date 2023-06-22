@@ -10,16 +10,25 @@ class OCR:
 
     @staticmethod
     def extract_total_amount(extracted_text):
+<<<<<<< HEAD
         pattern = r"(?i)(?:Total Amount|Total|Amount)[:\s]*([$]?\d+(?:\.\d{2})?)"  # Example pattern for extracting total amount
         match = re.search(pattern, extracted_text, re.IGNORECASE)
         if match:
             total_amount = match.group(1)
             return total_amount
+=======
+        pattern = r'Total\s(\$?\d+(?:\.\d{2})?)'  # Example pattern for extracting total amount
+        match = re.search(pattern, extracted_text, re.IGNORECASE)
+        if match:
+            total_amount = match.group(1)
+            return total_amount.strip()
+>>>>>>> main
         else:
             return None
 
     @staticmethod
     def extract_vendor_name(extracted_text):
+<<<<<<< HEAD
         # Example 1: Look for the first line before a line break
         pattern_1 = r'^.*?(?=\n)'
         match_1 = re.search(pattern_1, extracted_text, re.MULTILINE)
@@ -46,3 +55,14 @@ class OCR:
             return date
         else:
             return None
+=======
+        # TODO: Implement logic to extract vendor name from the extracted text
+        # Example: If vendor name appears in a specific format, you can use regex or string manipulation to extract it
+        return 'Uber'
+
+    @staticmethod
+    def extract_date(extracted_text):
+        # TODO: Implement logic to extract date from the extracted text
+        # Example: If date appears in a specific format, you can use regex or string manipulation to extract it
+        return None
+>>>>>>> main
