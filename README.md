@@ -5,6 +5,7 @@ ReceiptStash is a web application that allows you to upload and organize your re
 Make sure you have the following prerequisites installed on your system:
 
 Python 3.x: [Download Python](https://www.python.org/downloads/)
+
 Tesseract OCR: [Tesseract OCR GitHub](https://github.com/tesseract-ocr/tesseract)
 
 # Bugs
