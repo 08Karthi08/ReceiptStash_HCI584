@@ -9,7 +9,7 @@ class ReceiptDB:
         conn = self.create_connection()
         if conn is not None:
             create_table_sql = """
-                CREATE TABLE IF NOT EXISTS receipts (
+                CREATE TABLE IF NOT EXISTS receipts  (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     vendor_name TEXT,
                     date TEXT,

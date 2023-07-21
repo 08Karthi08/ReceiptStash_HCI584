@@ -18,7 +18,7 @@ It's important to note that the decision to make functions static or instance me
 
 # Define an OCR class for Optical Character Recognition operations
 class OCR:
-    # Static method to extract text from image bytes using pytesseract OCR
+    # Static method to extract text from image bytes using the pytesseract OCR
     @staticmethod
     def extract_text_from_bytes(image_bytes):
         """

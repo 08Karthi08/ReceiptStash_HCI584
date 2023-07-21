@@ -20,7 +20,7 @@ class DateConverter:
             # If the input date string is empty, return None (invalid date)
             return None
 
-    # Static method to convert a date object to a string representation (YYYY-MM-DD)
+    # Static method to convert a date object to a string representation(YYYY-MM-DD)
     @staticmethod
     def convert_to_str(date):
         # Check if the input date object is not empty

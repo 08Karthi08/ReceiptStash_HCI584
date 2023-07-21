@@ -43,7 +43,7 @@ def home():
 # Define the route for the main application page
 @app.route('/app', methods=['GET', 'POST'])
 def application():
-    # Handling file uploads and OCR processing when the form is submitted
+    # Handling file uploads and the OCR processing when the form is submitted
     if request.method == 'POST':
         if 'file' not in request.files:
             return 'No file uploaded', 400
