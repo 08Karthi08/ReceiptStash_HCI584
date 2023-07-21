@@ -9,7 +9,7 @@ Python 3.x: [Download Python](https://www.python.org/downloads/)
 Tesseract OCR: [Tesseract OCR GitHub](https://github.com/tesseract-ocr/tesseract)
 
 # Bugs
-1. The tip part needed to be scanned properly. When I tried different receipts, some parts with the light font or text next to a logo/visuals needed to be fixed. -fixed
-2. Vendor name is printed differently on different receipts. Most of them use their logo. It's difficult to extract from the receipts.
+
+1. Vendor name is printed differently on different receipts. Most of them use their logo. It's difficult to extract from the receipts.- fixed issue
 
 
