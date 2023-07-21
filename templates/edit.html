@@ -1,22 +1,33 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<!-- Display the heading for the edit receipt page -->
 <h1 class="text-center mb-4">Edit Receipt</h1>
+
+<!-- Card for displaying the form to edit receipt details -->
 <div class="card">
     <div class="card-body">
+        <!-- Form for updating receipt details using the 'POST' method -->
         <form method="POST" action="/edit/{{ receipt.id }}">
+            <!-- Input field for editing the vendor name -->
             <div class="mb-3">
                 <label for="vendor_name" class="form-label">Vendor Name:</label>
                 <input type="text" class="form-control" id="vendor_name" name="vendor_name" value="{{ receipt.vendor_name }}" required>
             </div>
+
+            <!-- Input field for editing the date -->
             <div class="mb-3">
                 <label for="date" class="form-label">Date:</label>
                 <input type="date" class="form-control" id="date" name="date" value="{{ receipt.date }}" required>
             </div>
+
+            <!-- Input field for editing the total amount -->
             <div class="mb-3">
                 <label for="total_amount" class="form-label">Total Amount:</label>
                 <input type="text" class="form-control" id="total_amount" name="total_amount" value="{{ receipt.total_amount }}" required>
             </div>
+
+            <!-- Save Changes button to submit the updated form -->
             <div class="text-center">
                 <button type="submit" class="btn btn-primary">Save Changes</button>
             </div>

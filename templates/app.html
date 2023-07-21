@@ -1,44 +1,80 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <!-- Container for the main content -->
     <div class="container mt-5">
         <h1 class="text-center mb-4">Receipt Organizer</h1>
+
+        <!-- Card for uploading receipts -->
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Upload Receipt</h5>
                 <form method="POST" enctype="multipart/form-data" action="/app">
+                    <!-- Input for selecting the receipt image -->
                     <div class="mb-3">
                         <label for="file" class="form-label">Select Receipt Image:</label>
                         <input type="file" class="form-control" id="file" name="file" accept="*" required>
                     </div>
+
+                    <!-- Upload button -->
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary">Upload</button>
                     </div>
                 </form>
             </div>
         </div>
+
+        <!-- Flash Messages -->
+        <!-- Display flash messages for notifications and alerts -->
+        <div class="container mt-3">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message[1] }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+
+        <!-- Card for filtering receipts by date -->
         <div class="card mt-4">
             <div class="card-body">
                 <h5 class="card-title">Filter Receipts by Date</h5>
-                <form class="row g-3" method="GET" action="/app">
+                <form class="row g-3" method="GET" action="/app" id="filter-form">
+                    <!-- Input for the start date -->
                     <div class="col-md-6">
                         <label for="start_date" class="form-label">Start Date:</label>
                         <input type="date" class="form-control" id="start_date" name="start_date" value="{{ start_date }}">
                     </div>
+
+                    <!-- Input for the end date -->
                     <div class="col-md-6">
                         <label for="end_date" class="form-label">End Date:</label>
                         <input type="date" class="form-control" id="end_date" name="end_date" value="{{ end_date }}">
                     </div>
+
+                    <!-- Buttons for applying and clearing filters -->
                     <div class="col-12 text-center">
                         <button type="submit" class="btn btn-primary">Apply Filter</button>
+                        <button type="button" class="btn btn-primary" onclick="clearFilter()">Clear Filter</button>
                     </div>
                 </form>
             </div>
         </div>
+
+        <!-- Card for displaying uploaded receipts in a table -->
         <div class="card mt-4">
             <div class="card-body">
                 <h5 class="card-title">Uploaded Receipts</h5>
+                <!-- Render the table containing the uploaded receipts using Flask table template -->
                 {{ table.__html__() | safe }}
+
+                <!-- Button to download the table as a CSV file -->
                 <div class="text-center">
                     <a href="{{ url_for('download_table') }}" class="btn btn-primary">Download</a>
                 </div>
@@ -46,9 +82,18 @@
         </div>
     </div>
 
+    <!-- JavaScript functions -->
     <script>
+        // Function to confirm receipt deletion
         function confirmDelete(receiptId) {
             return confirm('Are you sure you want to delete receipt ID ' + receiptId + '?');
+        }
+
+        // Function to clear date filters and submit the form
+        function clearFilter() {
+            document.getElementById("start_date").value = '';
+            document.getElementById("end_date").value = '';
+            document.getElementById("filter-form").submit();
         }
     </script>
 {% endblock %}

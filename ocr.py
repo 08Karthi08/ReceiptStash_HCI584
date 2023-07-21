@@ -16,15 +16,36 @@ The decision to make the functions in the OCR class static is likely driven by t
 It's important to note that the decision to make functions static or instance methods depends on the specific requirements and design choices of the application. In this case, making the functions static seems appropriate given their purpose and usage within the application.
 """
 
+# Define an OCR class for Optical Character Recognition operations
 class OCR:
+    # Static method to extract text from image bytes using pytesseract OCR
     @staticmethod
     def extract_text_from_bytes(image_bytes):
+        """
+        Extracts text from image bytes using pytesseract OCR.
+
+        Parameters:
+            image_bytes (bytes): Image content in bytes.
+
+        Returns:
+            str: Extracted text from the image.
+        """
         image = Image.open(BytesIO(image_bytes))
         extracted_text = pytesseract.image_to_string(image, lang='eng')
         return extracted_text
 
+    # Static method to extract the total amount from the extracted text
     @staticmethod
     def extract_total_amount(extracted_text):
+        """
+        Extracts the total amount from the extracted text using regular expressions.
+
+        Parameters:
+            extracted_text (str): The text extracted from the image.
+
+        Returns:
+            str or None: The total amount as a string (e.g., "$123.45") if found, None otherwise.
+        """
         pattern = r"(?i)(?:Total Amount|Total|Amount)[:\s]*([$]?\d+(?:\.\d{2})?)"  # Example pattern for extracting total amount
         match = re.search(pattern, extracted_text, re.IGNORECASE)
         if match:
@@ -33,8 +54,18 @@ class OCR:
         else:
             return None
 
+    # Static method to extract the vendor name from the extracted text
     @staticmethod
     def extract_vendor_name(extracted_text):
+        """
+        Extracts the vendor name from the extracted text using regular expressions.
+
+        Parameters:
+            extracted_text (str): The text extracted from the image.
+
+        Returns:
+            str or None: The vendor name if found, None otherwise.
+        """
         # Example 1: Look for the first line before a line break
         pattern_1 = r'^.*?(?=\n)'
         match_1 = re.search(pattern_1, extracted_text, re.MULTILINE)
@@ -51,8 +82,18 @@ class OCR:
 
         return None
 
+    # Static method to extract the date from the extracted text
     @staticmethod
     def extract_date(extracted_text):
+        """
+        Extracts the date from the extracted text using regular expressions.
+
+        Parameters:
+            extracted_text (str): The text extracted from the image.
+
+        Returns:
+            str or None: The date in 'YYYY-MM-DD' format if found, None otherwise.
+        """
         pattern = r'((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4})'
         match = re.search(pattern, extracted_text)
         if match:
