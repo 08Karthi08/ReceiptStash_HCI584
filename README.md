@@ -9,9 +9,13 @@ Python 3.x: [Download Python](https://www.python.org/downloads/)
 Tesseract OCR: [Tesseract OCR GitHub](https://github.com/tesseract-ocr/tesseract)
 # Requirement.txt
 Flask==2.1.1
+
 flask-table==0.5.0
+
 pytesseract==0.3.8
+
 Pillow==8.3.2
+
 # Bugs
 
 1. Vendor name is printed differently on different receipts. Most of them use their logo. It's difficult to extract from the receipts.- Error fixed
