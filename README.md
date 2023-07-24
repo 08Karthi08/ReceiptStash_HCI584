@@ -7,6 +7,10 @@ Make sure you have the following prerequisites installed on your system:
 Python 3.x: [Download Python](https://www.python.org/downloads/)
 
 Tesseract OCR: [Tesseract OCR GitHub](https://github.com/tesseract-ocr/tesseract)
+
+# Installation
+1. Clone the repository:
+  git clone https://github.com/08Karthi08/ReceiptStash_HCI584.git
 # Requirement.txt
 Flask==2.1.1
 
