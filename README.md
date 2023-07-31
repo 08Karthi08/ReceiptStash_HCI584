@@ -1,13 +1,5 @@
 # ReceiptStash
 ReceiptStash is a web application that allows you to upload and organize your receipts. It uses Flask as the backend framework and integrates Tesseract OCR for extracting text from uploaded receipt images.
-![Screenshot 2023-07-31 at 3 23 31 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/d105c339-b97f-4fc6-92c9-e7828c6ba97d)
-- Error message when you upload images that are not receipts:
-![Screenshot 2023-07-31 at 3 27 00 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/e2317a69-43af-4f92-aa77-5c341d059e6f)
-- Filter Receipts by date: 
-![Screenshot 2023-07-31 at 3 28 47 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/9c70f4b2-e082-470c-8bde-532c1b3d0da3)
-- Download CSV file:
-  
-![Screenshot 2023-07-31 at 3 25 11 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/2a88c110-640d-4158-b117-0621a76f1e29)
 
 # Prerequisites
 Make sure you have the following prerequisites installed on your system:
@@ -58,6 +50,16 @@ Contributing Contributions to the project are welcome! If you find any issues or
 License This project is licensed under the MIT License.
 
 Please replace your-username in the URLs with your actual GitHub username when creating the repository.
+# User Interface
+ * Dashboard
+  ![Screenshot 2023-07-31 at 3 23 31 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/d105c339-b97f-4fc6-92c9-e7828c6ba97d)
+ * Error message when you upload images that are not receipts:
+![Screenshot 2023-07-31 at 3 27 00 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/e2317a69-43af-4f92-aa77-5c341d059e6f)
+  * Filter Receipts by date: 
+![Screenshot 2023-07-31 at 3 28 47 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/9c70f4b2-e082-470c-8bde-532c1b3d0da3)
+  * Download CSV file:
+  
+![Screenshot 2023-07-31 at 3 25 11 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/2a88c110-640d-4158-b117-0621a76f1e29)
 
 
 
