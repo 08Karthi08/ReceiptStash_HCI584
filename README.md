@@ -37,19 +37,14 @@ app.secret_key = 'your_secret_key'
 
 6. Usage:
    
-- Start the Flask development server:
+   + Start the Flask development server:
 `python3 app.py`
 
-- Open your web browser and go to 
+   + Open your web browser and go to 
 http://localhost:5000.
 
-- You should see the homepage of the ReceiptStash web application.
+   + You should see the homepage of the ReceiptStash web application.
 
-Contributing Contributions to the project are welcome! If you find any issues or have any suggestions, please create a new issue or submit a pull request.
-
-License This project is licensed under the MIT License.
-
-Please replace your-username in the URLs with your actual GitHub username when creating the repository.
 # User Interface
  * Dashboard
   ![Screenshot 2023-07-31 at 3 23 31 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/d105c339-b97f-4fc6-92c9-e7828c6ba97d)
@@ -60,6 +55,12 @@ Please replace your-username in the URLs with your actual GitHub username when c
   * Download CSV file:
   
 ![Screenshot 2023-07-31 at 3 25 11 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/2a88c110-640d-4158-b117-0621a76f1e29)
+
+Contributing Contributions to the project are welcome! If you find any issues or have any suggestions, please create a new issue or submit a pull request.
+
+License This project is licensed under the MIT License.
+
+Please replace `your-username` in the URLs with your actual GitHub username when creating the repository.
 
 
 
