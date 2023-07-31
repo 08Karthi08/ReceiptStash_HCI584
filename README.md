@@ -56,10 +56,7 @@ http://localhost:5000.
   
 ![Screenshot 2023-07-31 at 3 25 11 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/2a88c110-640d-4158-b117-0621a76f1e29)
 
-***Contributing Contributions to the project are welcome! If you find any issues or have any suggestions, please create a new issue or submit a pull request.
- When creating the repository, please replace `your-username` in the URLs with your actual GitHub username.***
-> ***License:
-This project is licensed under the MIT License.***
+
 
 
 
