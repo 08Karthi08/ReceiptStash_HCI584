@@ -15,17 +15,13 @@ Configure the database connection string in the ReceiptDB class constructor (rec
 ## User Interaction and Flow
 The user interaction flow in ReceiptStash involves the following steps:
 
-The user visits the application URL and is redirected to the main application page.
-
-The user can upload receipt images on the main application page using the "Upload Receipt" button.
-
-After the user selects an image, the application processes it using OCR to extract text, including vendor name, date, and total amount.
-
-If the OCR extraction succeeds, the application stores the extracted data in the database, displaying a success message.
-
-The user can filter receipts by date range using the date filters provided on the main application page.
-
-The "View Receipts" table displays the filtered receipts, and the user can edit or delete individual receipts.
+1. The user visits the application URL and is redirected to the main application page.
+2. The user can upload receipt images on the main application page using the "Upload Receipt" button.
+3. After the user selects an image, the application processes it using OCR to extract text, including vendor name, date, and total amount.
+4. If the OCR extraction succeeds, the application stores the extracted data in the database, displaying a success message.
+5. The user can filter receipts by date range using the date filters provided on the main application page.
+6. The "View Receipts" table displays the filtered receipts, and the user can edit or delete individual receipts.
+7. User can download the receipts to a CSV file using the download button.
 
 ## Code Structure
 The main Flask application (app.py) is responsible for handling user requests and rendering templates. The project is organized into several modules:
