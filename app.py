@@ -1,5 +1,5 @@
 """
-Flask web application for managing receipts.
+ReceiptStash: Flask web application for managing receipts.
 
 This application allows users to upload receipts, view, edit, delete them.
 Receipts are stored in an SQLite database, and the application provides the option to download receipt data in CSV format.
