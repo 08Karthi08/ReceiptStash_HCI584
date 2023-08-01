@@ -18,6 +18,8 @@ db.create_table()
 # Define the ReceiptTable class for displaying receipts in a table format
 class ReceiptTable(Table):
     # Define table columns and attributes
+    """A table class for displaying receipts in a tabular format."""
+    
     vendor_name = Col('Vendor Name', allow_sort=True)
     date = Col('Date', allow_sort=True)
     total_amount = Col('Total Amount')
@@ -39,7 +41,8 @@ class ReceiptTable(Table):
 @app.route('/')
 def home():
     return redirect(url_for('application'))  # Redirect to the main application page
-
+ """Redirect to the main application page."""
+ 
 # Define the route for the main application page
 @app.route('/app', methods=['GET', 'POST'])
 def application():
