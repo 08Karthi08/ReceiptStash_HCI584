@@ -1,7 +1,7 @@
 # ReceiptStash - Developer's Guide
 
 ## Overview
-Welcome to the ReceiptStash Developer's Guide! This document serves as a comprehensive resource for developers who want to contribute to or understand the inner workings of ReceiptStash, a web application for uploading and organizing receipts. It provides an overview of the software, installation and deployment instructions, user interaction flow, known issues, and more.
+Welcome to the ReceiptStash Developer's Guide! This document serves as a comprehensive resource for developers who want to contribute to or understand the inner workings of ReceiptStash, a web application for uploading and organizing receipts. It provides an overview of the software, installation, and deployment instructions, user interaction flow, known issues, and more.
 
 ## Installation and Deployment
 Assuming the developer has already read the user's guide and installed the project, here are additional considerations for deployment and administration:
@@ -30,6 +30,29 @@ The main Flask application (app.py) is responsible for handling user requests an
 - `ocr.py: `Implements Optical Character Recognition (OCR) functions to extract text from receipt images.
 - `receipt_db.py: `Provides functions for interacting with the SQLite database to manage receipt data.
 - `date_utils.py: `Includes utility functions for handling data-related operations.
+
+### Modules:
+    * flask: The Flask web framework.
+    * flask_table: A package for generating HTML tables in Flask.
+    * datetime: Date and time-related functionalities.
+    * os: Operating system-related functionalities.
+    * ocr: Optical Character Recognition (OCR) module for text extraction from images.
+    * receipt_db: Module for managing the SQLite database for receipts.
+    * date_utils: Utility functions for working with date formats.
+
+### Classes:
+    * ReceiptTable: A subclass of FlaskTable used to display receipt data in an HTML table.
+
+### Functions:
+    * home(): Redirects users to the 'application' route.
+    * application(): Handles the main application route and displays receipts in a table.
+    * edit_receipt(receipt_id): Handles the 'edit' route for editing a specific receipt.
+    * delete_receipt(receipt_id): Handles the 'delete' route for deleting a specific receipt.
+    * download_table(): Generates a CSV file and allows users to download all receipts.
+
+### Helper Functions:
+    * convert_date_format(date_str): Converts a date from 'YYYY-MM-DD' to 'DD/MM/YYYY' format.
+    * filter_receipts_by_date(receipts, start_date, end_date): Filters receipts based on the selected date range.
 
 ## Known Issues
 While ReceiptStash is a functional project, some known issues should be addressed:
