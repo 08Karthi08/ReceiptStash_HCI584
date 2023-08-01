@@ -28,7 +28,6 @@ Helper Functions:
     - filter_receipts_by_date(receipts, start_date, end_date): Filters receipts based on the selected date range.
 """
 
-# The rest of the code remains unchanged.
 
 from flask import Flask, render_template, request, redirect, url_for, make_response, flash
 from flask_table import Table, Col, LinkCol
