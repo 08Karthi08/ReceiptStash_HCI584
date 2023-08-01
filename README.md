@@ -1,5 +1,5 @@
 # ReceiptStash
-ReceiptStash is a web application that allows you to upload and organize your receipts. It uses Flask as the backend framework and integrates Tesseract OCR for extracting text from uploaded receipt images.
+ReceiptStash is a web application that allows you to upload and organize your receipts. The application enables users to upload, store, filter, and download their receipts digitally, making it easy to track expenses and manage financial records. It uses Flask as the backend framework and integrates Tesseract OCR for extracting text from uploaded receipt images.
 
 ## Prerequisites
 Make sure you have the following prerequisites installed on your system:
@@ -20,6 +20,9 @@ Tesseract OCR: [Tesseract OCR GitHub](https://github.com/tesseract-ocr/tesseract
 1. **Clone the repository:**
   `git clone (https://github.com/08Karthi08/ReceiptStash_HCI584.git)`
 
+1. **Change into the project directory:**
+   `cd ReceiptStash_HCI584`
+
 1. **Create a virtual environment (optional but recommended):**
 `python3 -m venv venv`
 
@@ -33,7 +36,7 @@ Tesseract OCR: [Tesseract OCR GitHub](https://github.com/tesseract-ocr/tesseract
 `pip install -r requirements.txt`
 
 5. **Configuration (skip) Open the app.py file and set a secret key for session management. Modify the following line:**
-app.secret_key = 'your_secret_key'
+`app.secret_key = 'your_secret_key'`
 
 6. **Usage:**
    
