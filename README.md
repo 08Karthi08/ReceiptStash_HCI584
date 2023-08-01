@@ -9,13 +9,13 @@ Python 3.x: [Download Python](https://www.python.org/downloads/)
 Tesseract OCR: [Tesseract OCR GitHub](https://github.com/tesseract-ocr/tesseract)
 
 ## Requirement.txt
-`Flask==2.1.1`
+`Flask>=2.1.1`
 
-`flask-table==0.5.0`
+`flask-table>=0.5.0`
 
-`pytesseract==0.3.8`
+`pytesseract>=0.3.8`
 
-`Pillow==8.3.2`
+`Pillow>=8.3.2`
 ## Installation
 1. **Clone the repository:**
   `git clone (https://github.com/08Karthi08/ReceiptStash_HCI584.git)`
