@@ -4,7 +4,8 @@
 Welcome to the ReceiptStash Developer's Guide! This document serves as a comprehensive resource for developers who want to contribute to or understand the inner workings of ReceiptStash, a web application for uploading and organizing receipts. It provides an overview of the software, installation, and deployment instructions, user interaction flow, known issues, and more.
 
 ## Installation and Deployment
-Assuming the developer has already read the user's guide and installed the project, here are additional considerations for deployment and administration:
+
+Here are additional considerations for deployment and administration:
 
 Ensure the correct versions of dependencies are installed by checking the requirements.txt file.
 
