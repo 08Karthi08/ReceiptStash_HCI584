@@ -1,7 +1,7 @@
 # ReceiptStash - Developer's Guide
 
 ## Overview
-Welcome to the ReceiptStash Developer's Guide! This document serves as a comprehensive resource for developers who want to contribute to or understand the inner workings of ReceiptStash. It provides an overview of the software, installation (*refer to user guide/README for more details*), deployment instructions, user interaction flow, known issues, and more.
+Welcome to the ReceiptStash Developer's Guide! This document serves as a comprehensive resource for developers who want to contribute to or understand the inner workings of ReceiptStash. It provides an overview of the software, installation, deployment instructions, user interaction flow, known issues, and more.
 ## Tasks and Target Users
 * **Task Vignette 1:** Uploading and Scanning Receipts- 
  **User 1:** User wants to digitize their receipts for better organization and easy access.
@@ -10,7 +10,8 @@ Welcome to the ReceiptStash Developer's Guide! This document serves as a compreh
 * **Task Vignette 3:** Generating Expense Excel Report- 
  **User 3:** User wants to generate an expense report for documentation.
 ## Installation and Deployment
-
+ ***Refer to user guide/README for more details***
+ 
 Here are additional considerations for deployment and administration:
 
 Ensure the correct versions of dependencies are installed by checking the requirements.txt file.
