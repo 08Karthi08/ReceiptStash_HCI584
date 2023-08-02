@@ -16,13 +16,14 @@ Configure the database connection string in the ReceiptDB class constructor (rec
 ## User Interaction and Flow
 The user interaction flow in ReceiptStash involves the following steps:
 
-1. The user visits the application URL and is redirected to the main application page.
-2. The user can upload receipt images on the main application page using the "Upload Receipt" button.
+1. User accesses the web application by navigating to the application URL.
+2. The application's main page is displayed, showing a table with existing receipts (if any) and options to upload new receipts.
 3. After the user selects an image, the application processes it using OCR to extract text, including vendor name, date, and total amount.
 4. If the OCR extraction succeeds, the application stores the extracted data in the database, displaying a success message.
 5. The user can filter receipts by date range using the date filters provided on the main application page.
-6. The "View Receipts" table displays the filtered receipts, and the user can edit or delete individual receipts.
-7. User can download the receipts to a CSV file using the download button.
+6. The table displays the filtered receipts
+7. The user can edit or delete individual receipts.
+8. User can download the receipts to a CSV file using the download button.
    
 ![image](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/35f6f97d-f4e0-4c99-a4ba-8c64f33b0e94)
 
@@ -63,6 +64,21 @@ While ReceiptStash is a functional project, some known issues should be addresse
 
 The application does not handle pdf or file formats other than image files.
 
-## Optional Improvements
-Consider implementing a more robust OCR solution or integrating with an OCR service for better accuracy.
-Enhance the user interface with additional features and customization options.
+## Future Work
+- **User Authentication:** Implement user authentication and user accounts to allow users to securely access and manage their own receipts. This would enable personalized views and data organization.
+
+- **User Profiles and Tags:** Create user profiles where users can add tags or categories to their receipts. This feature would improve organization and make it easier for users to search and filter receipts.
+
+- **OCR Improvements:** Explore advanced OCR techniques to improve text extraction accuracy from receipt images. Investigate OCR libraries with better support for various receipt formats and languages.
+
+- **Data Visualization:** Integrate data visualization tools to provide users with insights into their spending patterns. Display statistics, charts, and graphs to help users analyze their expenses.
+
+- **Export and Reporting:** Enable users to export receipt data in various formats, such as PDF or link, for easy sharing and reporting purposes.
+
+- **Batch Processing:** Allow users to upload multiple receipt images at once and process them in a batch. This feature would save time for users with multiple receipts to upload.
+
+- **Mobile App Integration:** Develop a mobile application that allows users to capture and upload receipt images directly from their mobile devices. This would enhance the user experience and accessibility.
+
+- **Automated Expense Tracking:** Implement an automated expense tracking system that categorizes expenses and provides budgeting suggestions based on user spending patterns.
+
+- **Collaborative Receipt Management:** Introduce collaborative features to allow multiple users to manage receipts for shared expenses or projects.
