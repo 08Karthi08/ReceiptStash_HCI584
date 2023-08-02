@@ -10,7 +10,7 @@ Welcome to the ReceiptStash Developer's Guide! This document serves as a compreh
 * **Task Vignette 3:** Generating Expense Excel Report- 
  **User 3:** User wants to generate an expense report for documentation.
 ## Installation and Deployment
- ***Refer to user guide/README for more details***
+ ***Please Refer to the user guide/README for more details***
 ## User Interaction and Flow
 The user interaction flow in ReceiptStash involves the following steps:
 
