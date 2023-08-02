@@ -11,15 +11,6 @@ Welcome to the ReceiptStash Developer's Guide! This document serves as a compreh
  **User 3:** User wants to generate an expense report for documentation.
 ## Installation and Deployment
  ***Refer to user guide/README for more details***
- 
-Here are additional considerations for deployment and administration:
-
-Ensure the correct versions of dependencies are installed by checking the requirements.txt file.
-
-Set the SECRET_KEY environment variable to ensure session security if deploying the application in a production environment.
-
-Configure the database connection string in the ReceiptDB class constructor (receipt_db.py) to match the desired deployment environment.
-
 ## User Interaction and Flow
 The user interaction flow in ReceiptStash involves the following steps:
 
