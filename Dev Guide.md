@@ -23,6 +23,9 @@ The user interaction flow in ReceiptStash involves the following steps:
 5. The user can filter receipts by date range using the date filters provided on the main application page.
 6. The "View Receipts" table displays the filtered receipts, and the user can edit or delete individual receipts.
 7. User can download the receipts to a CSV file using the download button.
+   
+![image](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/35f6f97d-f4e0-4c99-a4ba-8c64f33b0e94)
+
 
 ## Code Structure
 The main Flask application (app.py) is responsible for handling user requests and rendering templates. The project is organized into several modules:
