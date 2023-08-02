@@ -2,7 +2,13 @@
 
 ## Overview
 Welcome to the ReceiptStash Developer's Guide! This document serves as a comprehensive resource for developers who want to contribute to or understand the inner workings of ReceiptStash, a web application for uploading and organizing receipts. It provides an overview of the software, installation, and deployment instructions, user interaction flow, known issues, and more.
-
+## Tasks and Target Users
+* **Task Vignette 1:** Uploading and Scanning Receipts- 
+ **User 1:** User wants to digitize their receipts for better organization and easy access.
+* **Task Vignette 2:** Searching and Retrieving Receipts-
+ **User 2:** User wants to quickly locate a specific receipt.
+* **Task Vignette 3:** Generating Expense Excel Report- 
+ **User 3:** User wants to generate an expense report for documentation.
 ## Installation and Deployment
 
 Here are additional considerations for deployment and administration:
