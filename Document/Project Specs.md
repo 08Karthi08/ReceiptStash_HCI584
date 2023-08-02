@@ -1,4 +1,4 @@
-# Receipt Stash
+# ReceiptStash
 
 ## Description: 
 The web app aims to provide a centralized platform for storing
