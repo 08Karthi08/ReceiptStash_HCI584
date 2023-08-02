@@ -1,7 +1,7 @@
 # ReceiptStash - Developer's Guide
 
 ## Overview
-Welcome to the ReceiptStash Developer's Guide! This document serves as a comprehensive resource for developers who want to contribute to or understand the inner workings of ReceiptStash, a web application for uploading and organizing receipts. It provides an overview of the software, installation, and deployment instructions, user interaction flow, known issues, and more.
+Welcome to the ReceiptStash Developer's Guide! This document serves as a comprehensive resource for developers who want to contribute to or understand the inner workings of ReceiptStash. It provides an overview of the software, installation (*refer to user guide/README for more details*), deployment instructions, user interaction flow, known issues, and more.
 ## Tasks and Target Users
 * **Task Vignette 1:** Uploading and Scanning Receipts- 
  **User 1:** User wants to digitize their receipts for better organization and easy access.
