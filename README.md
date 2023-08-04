@@ -46,6 +46,9 @@ Tesseract OCR: [Tesseract OCR GitHub](https://github.com/tesseract-ocr/tesseract
    + Open your web browser and go to 
 http://127.0.0.1:5001
 
+![Screenshot 2023-08-04 at 11 38 12 AM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/4fc0ef74-d347-4a1c-987e-d666a06e2b42)
+
+
    + You should see the homepage of the ReceiptStash web application.
 
 ## User Interface
