@@ -53,9 +53,11 @@ http://127.0.0.1:5001
 
 ## User Interface
  * **Dashboard**
-  ![Screenshot 2023-07-31 at 3 23 31 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/d105c339-b97f-4fc6-92c9-e7828c6ba97d)
+ ![Screenshot 2023-08-04 at 1 03 48 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/51ef03df-9e14-412e-82b3-4af6fe2ce00c)
+
  * **Error message when you upload images that are not receipts:**
-![Screenshot 2023-07-31 at 3 27 00 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/e2317a69-43af-4f92-aa77-5c341d059e6f)
+![Screenshot 2023-08-04 at 1 04 29 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/13a73de5-d756-464e-8b01-b834fd5ec950)
+
   * **Filter Receipts by date:** 
 ![Screenshot 2023-07-31 at 3 28 47 PM](https://github.com/08Karthi08/ReceiptStash_HCI584/assets/135080809/9c70f4b2-e082-470c-8bde-532c1b3d0da3)
   * **Download CSV file:**
