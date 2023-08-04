@@ -44,7 +44,7 @@ Tesseract OCR: [Tesseract OCR GitHub](https://github.com/tesseract-ocr/tesseract
 `python3 app.py`
 
    + Open your web browser and go to 
-http://localhost:5000.
+http://127.0.0.1:5001
 
    + You should see the homepage of the ReceiptStash web application.
 
